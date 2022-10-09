@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+class thing:
+    def __init__(self, name, desc, quantity):
+        self.name = name
+        self.desc = desc
+        self.quantity = quantity
