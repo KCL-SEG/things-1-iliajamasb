@@ -4,12 +4,12 @@ from django.db import models
 
 class Thing:
     def __init__(self, name, description, quantity):
-        if(length(name)>30 or length(name) == 0):
+        if(len(name)>30 or len(name) == 0):
             raise ValueError()
         else:
             self.name = name
 
-        if(length(description) > 120):
+        if(len(description) > 120):
             raise ValueError()
         else:
             self.description = description
