@@ -3,18 +3,18 @@ from django.db import models
 #add namelist
 
 class Thing:
-    def __init__(self, name, description, quantity):
-        if(len(name)>30 or len(name) == 0):
+    def __init__(models.Model):
+        if(len(models.name)>30 or len(models.name) == 0):
             raise ValueError()
         else:
-            self.name = name
+            self.name = models.name
 
-        if(len(description) > 120):
+        if(len(models.description) > 120):
             raise ValueError()
         else:
-            self.description = description
+            self.description = models.description
 
-        if(quantity > 100 or quantity<0):
+        if(models.quantity > 100 or models.quantity<0):
             raise ValueError()
         else:
-            self.quantity = quantity
+            self.quantity = models.quantity
